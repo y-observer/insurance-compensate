@@ -1,0 +1,11 @@
+cn\net\insurance\compensate\common\config\RestTemplateConfig.class
+cn\net\insurance\compensate\common\feign\InsuranceOrderOutsideFeign.class
+cn\net\insurance\compensate\common\enums\SystemTypeEnum.class
+cn\net\insurance\compensate\common\entity\AccountCacheDto.class
+cn\net\insurance\compensate\common\utils\NewRequestWrapper.class
+cn\net\insurance\compensate\common\config\RedisConfig.class
+cn\net\insurance\compensate\common\req\DictionaryReqDto.class
+cn\net\insurance\compensate\common\utils\InsuranceStringUtils.class
+cn\net\insurance\compensate\common\constant\RedisKeys.class
+cn\net\insurance\compensate\common\feign\InsuranceCompensateFeign.class
+cn\net\insurance\compensate\common\utils\NewRequestWrapper$1.class

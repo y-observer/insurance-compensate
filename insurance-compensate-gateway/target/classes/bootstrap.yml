@@ -1,0 +1,35 @@
+server:
+  port: 8041
+spring:
+  profiles:
+    active: dev
+  application:
+    name: insurance-compensate-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        group: ${spring.profiles.active}
+        prefix: ${spring.application.name}
+        file-extension: yml
+        shared-configs:
+          - dataId: insurance-compensate-baseconfig-${spring.profiles.active}.yml
+            group: ${spring.profiles.active}
+            refresh: true
+          - dataId: insurance-compensate-common-${spring.profiles.active}.yml
+            group: ${spring.profiles.active}
+            refresh: true
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 169.254.115.209:8848
+        namespace: 2f8d7aad-6d08-42e6-8a52-23055a53b998
+      config:
+        server-addr: 169.254.115.209:8848
+        namespace: 2f8d7aad-6d08-42e6-8a52-23055a53b998

@@ -1,0 +1,7 @@
+cn\net\insurance\compensate\connector\controller\LoginController.class
+cn\net\insurance\compensate\connector\controller\DictionaryController.class
+cn\net\insurance\compensate\connector\listener\CompensateConsumer.class
+cn\net\insurance\compensate\connector\mapper\DictionaryMapper.class
+cn\net\insurance\compensate\connector\InsuranceCompensateConnectorApplication.class
+cn\net\insurance\compensate\connector\service\DictionaryService.class
+cn\net\insurance\compensate\connector\service\impl\DictionaryServiceImpl.class

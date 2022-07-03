@@ -1,0 +1,46 @@
+server:
+  port: 8042
+  servlet:
+    context-path: /outside
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: insurance-compensate-outside-connector
+  cloud:
+    inetutils:
+      timeout-seconds: 10
+      ignored-interfaces: 'VMware Virtual Ethernet Adapter for VMnet1,VMware Virtual Ethernet Adapter for VMnet8'
+    nacos:
+      config:
+        group: ${spring.profiles.active}
+        prefix: ${spring.application.name}
+        file-extension: yml
+        shared-configs:
+          - dataId: insurance-compensate-baseconfig-${spring.profiles.active}.yml
+            group: ${spring.profiles.active}
+            refresh: true
+          - dataId: insurance-compensate-common-${spring.profiles.active}.yml
+            group: ${spring.profiles.active}
+            refresh: true
+          - dataId: logback-desensitize.yml
+            group: ${spring.profiles.active}
+            refresh: true
+          - dataId: insurance-compensate-config-${spring.profiles.active}.yml
+            group: ${spring.profiles.active}
+            refresh: true
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 169.254.115.209:8848
+        namespace: 2f8d7aad-6d08-42e6-8a52-23055a53b998
+      config:
+        server-addr: 169.254.115.209:8848
+        namespace: 2f8d7aad-6d08-42e6-8a52-23055a53b998

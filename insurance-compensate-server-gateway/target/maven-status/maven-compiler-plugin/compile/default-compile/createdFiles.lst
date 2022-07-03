@@ -1,0 +1,4 @@
+cn\net\insurance\compensate\server\gateway\controller\ServerDictionaryController.class
+cn\net\insurance\compensate\server\gateway\filter\ServerAccessFilter.class
+cn\net\insurance\compensate\server\gateway\InsuranceCompensateServerGatewayApplication.class
+cn\net\insurance\compensate\server\gateway\config\ServerIgnoreWhiteProperties.class

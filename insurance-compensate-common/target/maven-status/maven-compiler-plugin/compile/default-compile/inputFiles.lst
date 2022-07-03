@@ -1,0 +1,10 @@
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\feign\InsuranceCompensateFeign.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\enums\SystemTypeEnum.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\feign\InsuranceOrderOutsideFeign.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\config\RedisConfig.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\utils\NewRequestWrapper.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\entity\AccountCacheDto.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\req\DictionaryReqDto.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\config\RestTemplateConfig.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\utils\InsuranceStringUtils.java
+E:\test\insurance-compensate\insurance-compensate-common\src\main\java\cn\net\insurance\compensate\common\constant\RedisKeys.java
